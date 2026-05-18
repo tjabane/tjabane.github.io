@@ -3,20 +3,101 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tjabane</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="./content/style.css" rel="stylesheet" />
+    <meta name="description" content="Research notes and projects in distributed optimization, multi-agent systems, and game theory.">
+    <title>Tiisetso Tjabane | Cybernetic Systems</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <nav class="navbar bg-body-tertiary" data-bs-theme="dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <i class="bi bi-capslock"></i> Tjabane
-            </a>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Tiisetso Tjabane home">
+        <span class="brand-mark">TT</span>
+        <span>Tiisetso Tjabane</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#projects">Projects</a>
+        <a href="#ideas">Ideas</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <canvas id="agent-canvas" aria-hidden="true"></canvas>
+        <div class="hero-content">
+          <p class="eyebrow">Optimization / agents / games</p>
+          <h1 id="hero-title">Networked systems.</h1>
+          <p class="hero-copy">
+            Projects and notes on distributed intelligence.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="#projects">Projects</a>
+            <a class="button secondary" href="#ideas">Ideas</a>
+          </div>
         </div>
-    </nav>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      </section>
+
+      <section class="section intro-section" aria-labelledby="focus-title">
+        <div>
+          <p class="section-kicker">Signal</p>
+          <h2 id="focus-title">Systems that coordinate, learn, and adapt.</h2>
+        </div>
+        <p>
+          Short notes, simulations, and experiments.
+        </p>
+      </section>
+
+      <section class="section topic-grid" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="section-kicker">Modules</p>
+          <h2 id="projects-title">Projects</h2>
+        </div>
+        <article class="topic-card">
+          <span class="topic-icon">01</span>
+          <h3>Distributed Optimization</h3>
+          <p>Consensus, allocation, and sparse communication.</p>
+        </article>
+        <article class="topic-card">
+          <span class="topic-icon">02</span>
+          <h3>Multi-Agent Systems</h3>
+          <p>Coordination, learning, and autonomy.</p>
+        </article>
+        <article class="topic-card">
+          <span class="topic-icon">03</span>
+          <h3>Game Theory</h3>
+          <p>Equilibria, incentives, and strategic learning.</p>
+        </article>
+      </section>
+
+      <section class="section ideas-section" id="ideas" aria-labelledby="ideas-title">
+        <div class="section-heading">
+          <p class="section-kicker">Telemetry</p>
+          <h2 id="ideas-title">Ideas</h2>
+        </div>
+        <div class="idea-list">
+          <article>
+            <span>Networked Learning</span>
+            <h3>Learning through neighbors.</h3>
+          </article>
+          <article>
+            <span>Strategic Systems</span>
+            <h3>Algorithms with incentives.</h3>
+          </article>
+          <article>
+            <span>Simulation Notes</span>
+            <h3>Convergence with limited communication.</h3>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <p>Projects. Notes. Systems.</p>
+      <a href="mailto:hello@example.com">hello@example.com</a>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
